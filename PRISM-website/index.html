@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISM | Dynamic Visuals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="road-progress-container">
+        <div class="road-progress-fill"></div>
+    </div>
+    <div class="prism-background">
+        <!-- Sharp Beams (Large geometric light) -->
+        <div class="prism-layer prism-beam" id="beam-1"></div>
+        <div class="prism-layer prism-beam" id="beam-2"></div>
+
+        <!-- Linear Rainbow Streaks -->
+        <div class="prism-layer prism-streak" id="streak-1"></div>
+        <div class="prism-layer prism-streak" id="streak-2"></div>
+        <div class="prism-layer prism-streak" id="streak-3"></div>
+        <div class="prism-layer prism-streak" id="streak-4"></div>
+        <div class="prism-layer prism-streak" id="streak-5"></div>
+
+        <div class="prism-noise"></div>
+        <div class="prism-overlay"></div>
+    </div>
+
+    <main>
+        <nav>
+            <div class="logo">
+                <img src="prismlogo.svg" alt="PRISM Logo" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="#technology">Technology</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1 class="reveal-text">Road Intelligence. Reimagined.</h1>
+            <p class="reveal-text-sub">AI-powered road decay detection and predictive maintenance using computer vision,
+                traffic intelligence, and hyperlocal weather modeling.</p>
+            <div class="cta-group">
+                <button class="primary-btn">Contact Us</button>
+                <button class="secondary-btn" onclick="window.location.href='#technology'">Know more</button>
+            </div>
+        </section>
+
+        <section id="technology" class="content-section">
+            <h2 class="reveal-text">The PRISM Engine</h2>
+            <p class="reveal-text-sub">Our multi-layered AI architecture processes billions of data points to predict
+                road infrastructure decay before it starts.</p>
+
+            <div class="tile-grid">
+                <div class="info-tile">
+                    <h3>Computer Vision</h3>
+                    <p>Sub-millimeter edge detection identifies micro-fissures and thermal stress patterns in real-time
+                        road surface video feeds.</p>
+                </div>
+                <div class="info-tile">
+                    <h3>Traffic Intelligence</h3>
+                    <p>Dynamic load modeling combines axle weight data with traffic density to calculate localized
+                        surface degradation rates.</p>
+                </div>
+                <div class="info-tile">
+                    <h3>Hyperlocal Weather</h3>
+                    <p>Integrates satellite-derived humidity, freeze-thaw cycles, and precipitation models to predict
+                        chemical weathering.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="dashboard-container">
+            <div class="dashboard-header">
+                <div>
+                    <h2 class="reveal-text">Infrastructure Dashboard</h2>
+                    <p class="reveal-text-sub" style="margin-bottom: 0;">Real-time predictive maintenance metrics for
+                        Sector 7-G.</p>
+                </div>
+                <div style="text-align: right; opacity: 0.5; font-size: 0.8rem; text-transform: uppercase;">
+                    Last Update: Just Now
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="stat-card large">
+                    <span class="stat-label">Road Health Index</span>
+                    <div class="stat-value">94.2<span style="font-size: 1rem; opacity: 0.5;">%</span></div>
+                    <p style="margin-top: 1rem; opacity: 0.6;">Predicted stability for the next 48 hours based on
+                        simulated traffic load.</p>
+                    <div class="chart-mock">
+                        <div class="chart-bar" style="height: 60%;"></div>
+                        <div class="chart-bar" style="height: 80%;"></div>
+                        <div class="chart-bar" style="height: 45%;"></div>
+                        <div class="chart-bar" style="height: 90%;"></div>
+                        <div class="chart-bar" style="height: 70%;"></div>
+                        <div class="chart-bar" style="height: 85%;"></div>
+                        <div class="chart-bar" style="height: 40%;"></div>
+                        <div class="chart-bar" style="height: 55%;"></div>
+                        <div class="chart-bar" style="height: 75%;"></div>
+                        <div class="chart-bar" style="height: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">Active Alerts</span>
+                    <div class="stat-value">03</div>
+                    <div class="stat-trend trend-down">Lowering intensity</div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">Surface Temp</span>
+                    <div class="stat-value">22<span style="font-size: 1rem; opacity: 0.5;">°C</span></div>
+                    <div class="stat-trend trend-up">+1.2° vs avg</div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">Maintenance Cycle</span>
+                    <div class="stat-value">12<span style="font-size: 1rem; opacity: 0.5;">d</span></div>
+                    <div style="font-size: 0.8rem; opacity: 0.4; margin-top: 0.5rem;">Optimized timeline</div>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-label">Hyperlocal Humidity</span>
+                    <div class="stat-value">42<span style="font-size: 1rem; opacity: 0.5;">%</span></div>
+                    <div class="stat-trend trend-down">-5% vs forecast</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-info">
+                <span></span>
+                <span>© 2026 PRISM</span>
+            </div>
+        </footer>
+    </main>
+
+    <div class="custom-cursor"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const root = document.documentElement;
+            const cursor = document.querySelector('.custom-cursor');
+            const roadFill = document.querySelector('.road-progress-fill');
+
+            // Mouse tracking variables (percentage for background)
+            let mouseXPercent = 50;
+            let mouseYPercent = 50;
+            let currentXPercent = 50;
+            let currentYPercent = 50;
+
+            // Raw pixel coordinates for cursor
+            let mouseX = 0;
+            let mouseY = 0;
+            let currentX = 0;
+            let currentY = 0;
+
+            // Smoothing factor (lerp)
+            const smoothness = 0.05;
+
+            document.addEventListener('mousemove', (e) => {
+                // Percentage for background
+                mouseXPercent = (e.clientX / window.innerWidth) * 100;
+                mouseYPercent = (e.clientY / window.innerHeight) * 100;
+
+                // Pixels for cursor
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+
+                // Ensure cursor is visible
+                if (cursor) cursor.style.opacity = '1';
+            });
+
+            document.addEventListener('mouseleave', () => {
+                if (cursor) cursor.style.opacity = '0';
+            });
+
+            // Animation loop for smooth movement
+            function animate() {
+                // Interpolate background position
+                currentXPercent += (mouseXPercent - currentXPercent) * smoothness;
+                currentYPercent += (mouseYPercent - currentYPercent) * smoothness;
+
+                // Interpolate cursor position (slightly faster for responsiveness)
+                currentX += (mouseX - currentX) * 0.2;
+                currentY += (mouseY - currentY) * 0.2;
+
+                // Calculate tilt/rotation based on mouse distance from center
+                const tiltX = (currentYPercent - 50) * 0.144;
+                const tiltY = (currentXPercent - 50) * 0.144;
+                const rotate = (currentXPercent - 50) * 0.288;
+
+                // Update CSS variables for background
+                root.style.setProperty('--mouse-x', `${currentXPercent}%`);
+                root.style.setProperty('--mouse-y', `${currentYPercent}%`);
+                root.style.setProperty('--beam-tilt', `${tiltX}deg`);
+                root.style.setProperty('--beam-rotate', `${rotate}deg`);
+
+                // Update pixel-based cursor position
+                if (cursor) {
+                    cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+
+            // Scroll progress for road repair
+            window.addEventListener('scroll', () => {
+                if (!roadFill) return;
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                if (height > 0) {
+                    const scrolled = (winScroll / height) * 100;
+                    roadFill.style.width = scrolled + "%";
+                }
+            });
+
+            // Interactive buttons
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.addEventListener('mouseenter', () => {
+                    root.style.setProperty('--prism-opacity', '0.8');
+                    root.style.setProperty('--transition-speed', '0.3s');
+                });
+                btn.addEventListener('mouseleave', () => {
+                    root.style.setProperty('--prism-opacity', '0.6');
+                    root.style.setProperty('--transition-speed', '0.1s');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
